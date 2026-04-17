@@ -56,7 +56,7 @@ export default function HomePage() {
           {summaryCards.map((item) => (
             <article key={item.label} className="card-panel flex h-[118px] flex-col items-center justify-center px-4 text-center sm:h-[128px]">
               <p className="text-3xl font-extrabold text-brand-dark sm:text-4xl">{item.value}</p>
-              <p className="mt-1 text-base font-semibold text-slate-500 sm:text-lg">{item.label}</p>
+              <p className="mt-1 text-base font-semibold text-slate-500 sm:text-base">{item.label}</p>
             </article>
           ))}
         </div>
