@@ -7,18 +7,6 @@
   </head>
   <body>
     <div id="root"></div>
-    <script>
-      const isGitHubPages = window.location.hostname.endsWith("github.io");
-      const repoBasePath = "/B13-A7";
-      const isRepoRoot =
-        window.location.pathname === `${repoBasePath}/` ||
-        window.location.pathname === `${repoBasePath}/index.html`;
-
-      if (isGitHubPages && isRepoRoot) {
-        const redirectUrl = `${repoBasePath}/dist/${window.location.search}${window.location.hash}`;
-        window.location.replace(redirectUrl);
-      }
-    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
