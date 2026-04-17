@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Manrope", sans-serif;
+  background: #ebeff3;
+  color: #1f2937;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  @apply flex min-h-screen flex-col bg-pageBg;
+}
+
+.page-wrap {
+  @apply mx-auto w-full max-w-5xl px-4 sm:px-5 lg:px-6;
+}
+
+.card-panel {
+  @apply rounded-card border border-slate-200 bg-white shadow-card;
+}
+
+.chip {
+  @apply rounded-full px-2.5 py-1 text-xs font-semibold tracking-wide;
+}
+
+.status-overdue {
+  @apply bg-red-500 text-white;
+}
+
+.status-almost-due {
+  @apply bg-amber-400 text-white;
+}
+
+.status-on-track {
+  @apply bg-brand-dark text-white;
+}
+
+.tag-chip {
+  @apply chip bg-emerald-100 text-emerald-700;
+}
+
+.muted-text {
+  @apply text-slate-500;
+}
