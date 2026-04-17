@@ -18,8 +18,8 @@ export default function FriendCard({ friend }) {
 
         <div className="flex flex-col items-center w-full">
           <h3 className="text-xl font-extrabold text-slate-800 leading-tight w-full truncate">{friend.name}</h3>
-          <div className="flex items-center justify-center gap-1 mt-1">
-            <span className="text-xs text-slate-500 font-medium">{formatDaysAgo(friend.days_since_contact)}</span>
+          <div className="mt-1 flex flex-col items-center gap-1">
+            <span className="text-xs font-medium text-slate-500">{formatDaysAgo(friend.days_since_contact)}</span>
             <StatusBadge status={friend.status} />
           </div>
         </div>
