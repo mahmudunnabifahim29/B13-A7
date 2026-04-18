@@ -65,7 +65,7 @@ export default function HomePage() {
       <section className="border-t border-slate-300 pt-6">
         <h2 className="text-2xl font-extrabold text-slate-800 sm:text-3xl">Your Friends</h2>
 
-        <div className="mt-5 grid grid-cols-4 gap-4">
+        <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {friends.length === 0 ? (
             <article className="card-panel col-span-4 p-7 text-center">
               <p className="text-base font-semibold text-slate-600">No friends available yet.</p>

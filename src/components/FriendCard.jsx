@@ -6,7 +6,7 @@ export default function FriendCard({ friend }) {
   return (
     <Link
       to={`/friend/${friend.id}`}
-      className="card-panel block aspect-square p-0 transition hover:-translate-y-0.5 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-dark"
+      className="card-panel block min-h-[250px] p-0 transition hover:-translate-y-0.5 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-dark"
     >
       <div className="flex h-full flex-col items-center justify-between text-center px-4 py-5">
         <img
